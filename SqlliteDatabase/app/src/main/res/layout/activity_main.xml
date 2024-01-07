@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:background="#292525">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER PERSON INFORMATION"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idPrimary"
+        android:textSize="24dp"
+        android:layout_below="@+id/text"
+        android:hint="ID"/>
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textSize="24dp"
+        android:layout_below="@+id/idPrimary"
+        android:hint="Name"/>
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/surname"
+        android:textSize="24dp"
+        android:layout_below="@+id/name"
+        android:hint="Surname"/>
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/number"
+        android:textSize="24dp"
+        android:layout_below="@+id/surname"
+        android:hint="Phone Number"/>
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:textSize="24dp"
+        android:layout_below="@+id/number"
+        android:hint="e_mail"/>
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:textSize="24dp"
+        android:layout_below="@+id/email"
+        android:hint="Address"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnView"
+        android:textSize="24sp"
+        android:text="View Data"
+        android:layout_below="@id/insertData"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/insertData"
+        android:text="Insert Data"
+        android:textSize="24sp"
+        android:layout_below="@id/address"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
